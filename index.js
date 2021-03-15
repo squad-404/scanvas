@@ -1,0 +1,1 @@
+module.exports.RankCard = require("./src/rank/rank.js")
