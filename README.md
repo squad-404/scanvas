@@ -1,8 +1,7 @@
-<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="logo" src="https://cdn.discordapp.com/attachments/734202298644824064/820939556404330496/Proyek_Baru_186_9C03053.png"/>
+<img width="140" height="140" align="left" style="float: left; margin: 0 10px 0 0;" alt="logo" src="https://cdn.discordapp.com/attachments/734202298644824064/820939556404330496/Proyek_Baru_186_9C03053.png"/>
 
 # Scanvas
 [![npm](https://img.shields.io/npm/v/scanvas)](https://npmjs.org/scanvas)
-> Package that will let you do canvas things very easily
 
 ## How to use 📚
 [![NPM](https://nodei.co/npm/scanvas.png)](https://npmjs.org/package/scanvas)
@@ -16,7 +15,7 @@ const scanvas = require("scanvas")
 
 const scanvas = require("scanvas")
 const Discord = require("discord.js")
-const rank = scanvas.RankCard()
+const rank = await new scanvas.RankCard()
 .setname("SAFAR")
 .setAvatar(message.author.avatarURL)
 .setXp(5)
