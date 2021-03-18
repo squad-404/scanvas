@@ -2,10 +2,11 @@ const Canvas = require("canvas");
 
 module.exports = class RankCard {
   constructor() {
-    this.name = "safar"
+    this.name = "name"
     this.xp = 0
     this.fullxp = 0
     this.level = 0
+    this.color = "#0081ff"
     this.avatar = "https://cdn.glitch.com/8fb45a33-94c4-4aa8-9960-447fff8a9bc2%2Fb31bf030-d198-4012-89d9-ff756abdfc3e.image.png?v=1615716789428"
     this.background = "https://cdn.discordapp.com/attachments/756439300115136576/798383388385214484/Proyek_Baru_118_93FC5C4.png"
   }
@@ -24,6 +25,10 @@ module.exports = class RankCard {
   setLevel(isi){
     this.level = isi;
     return this;
+  }
+  setColor(isi){
+      this.color = isi;
+      return this;
   }
   setAvatar(isi){
     this.avatar = isi;
@@ -47,7 +52,7 @@ module.exports = class RankCard {
 	return ctx.font;
 
 };
-try {
+
    const bgb = await Canvas.loadImage(this.background)
   const bga = await Canvas.loadImage("https://cdn.glitch.com/ec6243dd-81c1-4221-919c-b684ff267d3e%2FProyek%20Baru%20106%20%5B892F529%5D.png?v=1610419406668")
   ctx.drawImage(bgb, 0, 0, canvas.width, canvas.height);
@@ -57,7 +62,7 @@ try {
   
   ctx.fillStyle = "#ffffff";
   ctx.fillRect(220, 130, 340, 20);
-  ctx.fillStyle = "#0081ff";
+  ctx.fillStyle = this.color;
   ctx.fillRect(220, 130, progress, 20)
   ctx.strokeStyle = "#ffffff";
   ctx.lineWidth = 5;
@@ -77,9 +82,7 @@ try {
   ctx.fillText(`level:${this.level}`,500,40)
   
     return canvas;
-   } catch (e) {
-       console.error(`scanvas > ${e}`)
-   }
+   
   }
 };
 
