@@ -51,6 +51,7 @@ module.exports = class goodbye{
 	} while (ctx.measureText(text).width > canvas.width - 300);
 
 	return ctx.font;
+        }
 const bg = await Canvas.loadImage(this.background)
 const av = await Canvas.loadImage(this.avatar)
 ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
