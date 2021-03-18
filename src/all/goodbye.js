@@ -89,3 +89,4 @@ ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
     ctx.drawImage(av, 25, 120, 450, 450);
     return canvas
     }
+}
