@@ -16,11 +16,11 @@ const scanvas = require("scanvas")
 const scanvas = require("scanvas")
 const Discord = require("discord.js")
 const rank = await new scanvas.RankCard()
-.setname("SAFAR") 
+.setName("SAFAR") 
 .setAvatar(message.author.avatarURL)
 .setXp(5)
 .setColor("#0081ff")
-.serFullXp(10)
+.setFullXp(10)
 .setBackground("https://site.com/background.jpg")
 .toAttachment();
 
