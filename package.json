@@ -1,6 +1,6 @@
 {
   "name": "scanvas",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Discord canvas",
   "main": "index.js",
   "repository": {
